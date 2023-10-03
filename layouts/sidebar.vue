@@ -465,7 +465,7 @@ export default {
         .left-side-bar{
             background-color: rgb(192,192,192);
             width: 25%;
-            height: 100vh;
+            height: 100%;
             legend{
                 height: 42px;
                 display: flex;
@@ -573,7 +573,7 @@ export default {
                 width: 100%;
                 padding: 0px;
                 height: 100px;
-                position: fixed;
+                position: relative;
                 display: flex;
                 align-items: center;
                 .child-bar{
@@ -581,6 +581,8 @@ export default {
                         padding: 0px;
                         display: flex;
                         align-items: center;
+                        flex-wrap:wrap;
+                        gap:10px;
                         li{
                             list-style: none;
                             padding: 7px 10px;
@@ -597,6 +599,10 @@ export default {
                         }
                     }
                 }
+            }
+            .out-layout{
+                width: 100%;
+                padding:10px 10px;
             }
         }
      }
