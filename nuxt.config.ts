@@ -12,5 +12,12 @@ export default defineNuxtConfig({
         '@fortawesome/free-brands-svg-icons'
     ]
 },
-modules:['nuxt-icon']
+modules:['nuxt-icon'],
+app: {
+  head: {
+    title:"My study",
+    charset: 'utf-8',
+    viewport: 'width=device-width, initial-scale=1',
+  }
+}
 })
